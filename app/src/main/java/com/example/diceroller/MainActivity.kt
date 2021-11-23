@@ -33,7 +33,8 @@ class MainActivity : AppCompatActivity() {
         } else if(resultText.text == 6.toString()){
             Toast.makeText(this, "Final Count Reached", Toast.LENGTH_LONG).show()
         } else {
-            val resultInt = resultText.text.toString().toInt() + 1
+            var resultInt = resultText.text.toString().toInt()
+            resultInt++
             resultText.text = resultInt.toString()
         }
     }
